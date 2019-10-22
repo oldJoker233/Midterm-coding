@@ -124,4 +124,22 @@ public class LatinSquareTest {
 		assertFalse(LS.isLatinSquare());
 	}
 
+	@Test
+	public void isLatinSquare_static_Test1() {
+		
+		int[][] MySquare = { { 1, 2, 3 }, { 3, 1, 2 }, { 2, 3, 1 } };
+
+		
+		assertTrue(LatinSquare.isLatinSquare(MySquare));
+	}
+
+	@Test
+	public void isLatinSquare_static_Test2() {
+		
+		int[][] MySquare = { { 1, 2, 3 }, { 3, 1, 2 }, { 4, 5, 6 } };
+
+		
+		assertFalse(LatinSquare.isLatinSquare(MySquare));
+	}
+
 }
